@@ -2,7 +2,7 @@ package com.coxtunes.androidarchitecturekotlin2021.ui.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.coxtunes.androidarchitecture2021.common.responseSealed.Resource
+import com.coxtunes.androidarchitecturekotlin2021.common.responseSealed.Resource
 import com.coxtunes.androidarchitecturekotlin2021.domain.usecase.GetUsersUseCase
 import com.coxtunes.androidarchitecturekotlin2021.domain.viewobjects.UsersViewItems
 import com.coxtunes.androidarchitecturekotlin2021.ui.uistate.UsersUiState

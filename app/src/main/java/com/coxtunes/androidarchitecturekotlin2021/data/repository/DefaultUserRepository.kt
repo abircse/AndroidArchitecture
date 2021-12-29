@@ -1,7 +1,6 @@
 package com.coxtunes.androidarchitecturekotlin2021.data.repository
-
-import com.coxtunes.androidarchitecture2021.common.responseSealed.Resource
-import com.coxtunes.androidarchitecture2021.common.utility.DispatcherProvider
+import com.coxtunes.androidarchitecturekotlin2021.common.responseSealed.Resource
+import com.coxtunes.androidarchitecturekotlin2021.common.utility.DispatcherProvider
 import com.coxtunes.androidarchitecturekotlin2021.data.remoteDataSource.UsersRemoteDataSource
 import com.coxtunes.androidarchitecturekotlin2021.domain.repository.UserRepository
 import com.coxtunes.androidarchitecturekotlin2021.domain.viewobjects.UsersViewItems

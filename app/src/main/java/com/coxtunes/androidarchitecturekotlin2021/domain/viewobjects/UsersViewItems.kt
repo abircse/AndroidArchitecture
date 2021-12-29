@@ -6,6 +6,7 @@ package com.coxtunes.androidarchitecturekotlin2021.domain.viewobjects
  */
 data class UsersViewItems(
     val name: String,
+    val email: String,
     val phone: String,
     val website: String
 )

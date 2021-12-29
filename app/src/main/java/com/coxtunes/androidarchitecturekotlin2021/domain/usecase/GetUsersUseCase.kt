@@ -1,6 +1,6 @@
 package com.coxtunes.androidarchitecturekotlin2021.domain.usecase
 
-import com.coxtunes.androidarchitecture2021.common.responseSealed.Resource
+import com.coxtunes.androidarchitecturekotlin2021.common.responseSealed.Resource
 import com.coxtunes.androidarchitecturekotlin2021.domain.repository.UserRepository
 import com.coxtunes.androidarchitecturekotlin2021.domain.viewobjects.UsersViewItems
 import javax.inject.Inject
