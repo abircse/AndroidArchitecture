@@ -7,6 +7,7 @@ An Implementation of Google Recommended New Android Architecture with Kotlin
 -Stateflow
 -Dagger Hilt
 -ViewBinding
+-DataBinding
 -Lifecycle
 -UIState
 
