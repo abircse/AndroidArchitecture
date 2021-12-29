@@ -9,4 +9,4 @@ An Implementation of Google Recommended New Android Architecture with Kotlin
 -ViewBinding
 -Lifecycle
 
-![Screenshot_17](https://user-images.githubusercontent.com/22006238/147638167-b7b4e340-706e-4666-bafa-538b8c262916.png)
+![Screenshot_3](https://user-images.githubusercontent.com/22006238/147638707-dedde774-224e-40c1-b488-124ab7a490bc.png)
