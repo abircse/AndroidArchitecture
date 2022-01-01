@@ -12,7 +12,9 @@ import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 import kotlinx.coroutines.CoroutineDispatcher
+import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.SupervisorJob
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
@@ -68,12 +70,19 @@ object AppModule {
         return retrofit.create(UsersApi::class.java)
     }
 
+
+    @Provides
+    fun provideCoroutinesScope(dispatcher: DispatcherProvider): CoroutineScope {
+        return CoroutineScope(SupervisorJob() + dispatcher.default)
+
+    }
+
     @Singleton
     @Provides
     fun provideUserRepository(
         remoteDataSource: UsersRemoteDataSource,
-        dispatcher: DispatcherProvider
+        externalScope: CoroutineScope
     ): UserRepository {
-        return DefaultUserRepository(remoteDataSource, dispatcher)
+        return DefaultUserRepository(remoteDataSource, externalScope)
     }
 }
